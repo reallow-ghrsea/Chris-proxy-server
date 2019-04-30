@@ -4,16 +4,21 @@
   "description": "combines team components",
   "main": "./server.js",
   "dependencies": {
+    "axios": "^0.18.0",
+    "cors": "^2.8.5",
     "express": "^4.16.4",
+    "express-http-proxy": "^1.5.1",
     "morgan": "^1.9.1",
-    "path": "^0.12.7"
+    "newrelic": "^5.7.0",
+    "path": "^0.12.7",
+    "request": "^2.88.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.10"
+    "nodemon": "^1.18.11"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./server.js"
+    "start": "nodemon ./server.js"
   },
   "repository": {
     "type": "git",
